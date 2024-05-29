@@ -1,0 +1,35 @@
+increased_thirst($ans)
+	\nWelcome to our expert system for diabetes detection!
+	Before we get started, Please answer the following question. 
+	\n
+	Do you feel thirsty lately?
+	---
+	$ans = yn
+
+increased_hunger($ans)
+	Do you feel hungry lately?
+	---
+	$ans = yn
+
+increased_urination($ans)
+	Do you feel like you want to urinate more lately?
+	---
+	$ans = yn
+
+increased_fatigue($ans)
+	Do you feel tired?
+	---
+	$ans = yn
+
+random_glucose_test($ans)
+	Ok, you need to do a random glucose test, Then please enter the test result: 
+	---
+	$ans = integer(low=-79 |
+			normal=80-139 |
+			high= 140-199 |
+			veryHigh=200-)
+
+diabetic_parent($ans)
+	Do your parents have diabetes?
+	---
+	$ans = yn
